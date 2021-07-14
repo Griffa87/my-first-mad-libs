@@ -19,44 +19,34 @@ namespace MyFirstMadLibs
             Console.ReadKey(true);
         }
         static void StoryChoices()
-        {
+        {   // Questions for the user
             Console.WriteLine("-------------------------------------");
             Console.WriteLine("What's your favorite color?");
             string color = Console.ReadLine();
-            
             Console.WriteLine("\nInteresting... Now, who is your favorite movie star?");
             string movieStar = Console.ReadLine();
-            
             Console.WriteLine("\nOk, what's your favorite number?");
             int favNumber = Convert.ToInt32(Console.ReadLine());
-            
             Console.WriteLine("\nLets talk about food, what's your favorite dish?");
             string favFood = Console.ReadLine();
-            
             Console.WriteLine("\nThat's disgusting! \nRedemption question: latte, cappuchino, tea or hot chocolate?");
             string favDrink = Console.ReadLine();
-            
             Console.WriteLine("\nNow were talking! Ok, in what year were you born?");
             int yearBorn = Convert.ToInt32(Console.ReadLine());
-            
             Console.WriteLine("\nI should have known that. You told me your age earlier... My developer is a noob!");
-            
             Console.WriteLine("\nIn what city were you born?");
             string city = Console.ReadLine();
-            
             Console.WriteLine("\nIf you had to pick one book to read forever, what would it?");
             string favBook = Console.ReadLine();
-            
             Console.WriteLine("\nLast question now. What's your partners name?");
             string partName = Console.ReadLine();
-            
             Console.WriteLine("\nActually... Lets have one more! What's your favorite alcoholic drink?");
             string favAlc = Console.ReadLine();
             Console.WriteLine("-------------------------------------");
             Console.WriteLine("With the information collected, I'm going to write a story for you");
             Console.WriteLine("Press any key when ready...");
             Console.ReadKey(true);
-            
+            // Story making use of variables
             Console.WriteLine($"\nIt was the year {yearBorn}. Minding your own business in a coffee shop on the outskirts of " +
                               $"{city}, you notice someone that looks familiar. Peering over your {favDrink}, you squint slightly. " +
                               $"To your surprise, it's {movieStar} sat in the corner reading a copy of what looks like {favBook}. " +
